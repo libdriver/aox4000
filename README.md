@@ -10,7 +10,7 @@
 
 AOX4000 is an oxygen sensor based on the principle of fluorescence quenching, which measures the partial pressure of oxygen in the environment. The sensor is equipped with a built-in air pressure sensor, which can directly output the values of ambient air pressure, oxygen partial pressure, and oxygen concentration, making it easy for users to intuitively read the data. Compared with electrochemical sensors, AOX4000 uses non lossy oxygen sensitive materials, thus having a longer lifespan. Due to its temperature compensation function, no additional compensation system is required. AOX4000 is very stable and environmentally friendly, without lead or any other harmful substances, and is almost unaffected by cross interference from other gases.
 
-LibDriver AOX4000 is a full function AOX4000 driver launched by LibDriver, which provides functions such as oxygen partial pressure reading, oxygen concentration reading, atmospheric pressure reading, temperature reading and so on. LibDriver is MISRA compliant.
+LibDriver AOX4000 is a full-featured AOX4000 driver launched by LibDriver, which provides functions such as oxygen partial pressure reading, oxygen concentration reading, atmospheric pressure reading, temperature reading and so on. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
