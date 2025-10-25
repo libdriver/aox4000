@@ -65,7 +65,7 @@ We use '\n' to wrap lines.If your serial port assistant displays exceptions (e.g
    ```
 
 
-6. Run aox4000 read function, num is the test times.
+5. Run aox4000 read function, num is the test times.
 
    ```shell
    aox4000 (-e read | --example=read) [--times=<num>]
