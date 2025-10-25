@@ -104,7 +104,7 @@ find_package(aox4000 REQUIRED)
    ```
 
 
-6. Run aox4000 read function, num is the test times.
+5. Run aox4000 read function, num is the test times.
 
    ```shell
    aox4000 (-e read | --example=read) [--times=<num>]
