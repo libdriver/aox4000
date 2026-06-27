@@ -313,7 +313,7 @@ static uint8_t aox4000_parse_data(aox4000_handle_t *handle, char *input, float *
         return 1;                                                             /* return error */
     }
     
-    handle->last_error = (uint8_t)AOX4000_STATUS_UNKNOWN;                     /* set unknown */
+    handle->last_error = (uint8_t)AOX4000_STATUS_OK;                          /* set ok */
     
     return 0;                                                                 /* success return 0 */
 }
