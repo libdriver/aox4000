@@ -153,7 +153,7 @@ static uint8_t aox4000_parse_mode(aox4000_handle_t *handle, char *input, uint8_t
         memset(buf, 0, sizeof(char) * 8);                       /* clear buffer */
         buf[0] = input[2];                                      /* set buf[0] */
         buf[1] = input[3];                                      /* set buf[1] */
-        handle->last_error = (uint8_t)atoi(buf);                /* set last error */
+        handle->last_error = (uint8_t)(atoi(buf) + 1);          /* set last error */
         
         return 1;                                               /* return error */
     }
@@ -210,7 +210,7 @@ static uint8_t aox4000_parse_number(aox4000_handle_t *handle, const char *comman
         memset(buf, 0, sizeof(char) * 8);                       /* clear buffer */
         buf[0] = input[2];                                      /* set buf[0] */
         buf[1] = input[3];                                      /* set buf[1] */
-        handle->last_error = (uint8_t)atoi(buf);                /* set last error */
+        handle->last_error = (uint8_t)(atoi(buf) + 1);          /* set last error */
         
         return 1;                                               /* return error */
     }
@@ -248,7 +248,7 @@ static uint8_t aox4000_parse_data(aox4000_handle_t *handle, char *input, float *
         memset(buf, 0, sizeof(char) * 8);                                     /* clear buffer */
         buf[0] = input[2];                                                    /* set buf[0] */
         buf[1] = input[3];                                                    /* set buf[1] */
-        handle->last_error = (uint8_t)atoi(buf);                              /* set last error */
+        handle->last_error = (uint8_t)(atoi(buf) + 1);                        /* set last error */
         
         return 1;                                                             /* return error */
     }

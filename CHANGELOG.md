@@ -1,3 +1,9 @@
+## 1.0.4 (2026-10-16)
+
+## Bug Fixes
+
+- fix error code bugs
+
 ## 1.0.3 (2026-06-27)
 
 ## Bug Fixes
