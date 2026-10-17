@@ -621,6 +621,7 @@ uint8_t aox4000_read(aox4000_handle_t *handle, float *oxygen_ppo2_mbar,
         char output[48];
         uint16_t output_len;
         
+        memset(output, 0, sizeof(char) * 48);                                            /* init buffer */
         output_len = 47;                                                                 /* set 47 */
         res = a_aox4000_read(handle, output, &output_len);                               /* read */
         if (res != 0)                                                                    /* check result */
@@ -717,6 +718,7 @@ uint8_t aox4000_read_oxygen_ppo2(aox4000_handle_t *handle, float *mbar)
         float temperature_degree;
         float pressure_mbar;
         
+        memset(output, 0, sizeof(char) * 48);                                /* init buffer */
         output_len = 47;                                                     /* set 47 */
         res = a_aox4000_read(handle, output, &output_len);                   /* read */
         if (res != 0)                                                        /* check result */
@@ -814,6 +816,7 @@ uint8_t aox4000_read_oxygen_density(aox4000_handle_t *handle, float *percentage)
         float temperature_degree;
         float pressure_mbar;
         
+        memset(output, 0, sizeof(char) * 48);                                /* init buffer */
         output_len = 47;                                                     /* set 47 */
         res = a_aox4000_read(handle, output, &output_len);                   /* read */
         if (res != 0)                                                        /* check result */
@@ -911,6 +914,7 @@ uint8_t aox4000_read_pressure(aox4000_handle_t *handle, float *mbar)
         float oxygen_density_percentage;
         float temperature_degree;
         
+        memset(output, 0, sizeof(char) * 48);                                         /* init buffer */
         output_len = 47;                                                              /* set 47 */
         res = a_aox4000_read(handle, output, &output_len);                            /* read */
         if (res != 0)                                                                 /* check result */
@@ -1007,6 +1011,7 @@ uint8_t aox4000_read_temperature(aox4000_handle_t *handle, float *degree)
         float oxygen_density_percentage;
         float pressure_mbar;
         
+        memset(output, 0, sizeof(char) * 48);                                         /* init buffer */
         output_len = 47;                                                              /* set 47 */
         res = a_aox4000_read(handle, output, &output_len);                            /* read */
         if (res != 0)                                                                 /* check result */
